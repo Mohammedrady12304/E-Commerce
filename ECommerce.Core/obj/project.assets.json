@@ -815,19 +815,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dc\\.nuget\\packages\\": {}
+    "C:\\Users\\ahmed_gamal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\ECommerce.Core\\ECommerce.Core.csproj",
+      "projectUniqueName": "D:\\.Net Courses\\.Net\\.Net Projects\\Sigma Website\\E-Commerce\\E-Commerce\\ECommerce.Core\\ECommerce.Core.csproj",
       "projectName": "ECommerce.Core",
-      "projectPath": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\ECommerce.Core\\ECommerce.Core.csproj",
-      "packagesPath": "C:\\Users\\Dc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\ECommerce.Core\\obj\\",
+      "projectPath": "D:\\.Net Courses\\.Net\\.Net Projects\\Sigma Website\\E-Commerce\\E-Commerce\\ECommerce.Core\\ECommerce.Core.csproj",
+      "packagesPath": "C:\\Users\\ahmed_gamal\\.nuget\\packages\\",
+      "outputPath": "D:\\.Net Courses\\.Net\\.Net Projects\\Sigma Website\\E-Commerce\\E-Commerce\\ECommerce.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ahmed_gamal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
