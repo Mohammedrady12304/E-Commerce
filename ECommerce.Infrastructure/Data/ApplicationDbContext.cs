@@ -17,6 +17,8 @@ namespace E_Commerce1.ECommerce.Infrastructure.Data
                 
         }
 
+        public DbSet<Category> Categories { get; set; }
+        
         
 
         protected override void OnModelCreating(ModelBuilder builder)

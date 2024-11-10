@@ -154,7 +154,7 @@ namespace ECommerce.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("ECommerce.Core.Entities.Earnings", b =>
@@ -293,6 +293,7 @@ namespace ECommerce.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("typeId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int?>("wishListId")
@@ -643,7 +644,9 @@ namespace ECommerce.Infrastructure.Migrations
 
                     b.HasOne("ECommerce.Core.Entities.Type", "type")
                         .WithMany("products")
-                        .HasForeignKey("typeId");
+                        .HasForeignKey("typeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("ECommerce.Core.Entities.WishList", "wishList")
                         .WithMany("Products")

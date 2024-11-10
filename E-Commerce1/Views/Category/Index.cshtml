@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ECommerce.Core.Entities.Category>
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<a asp-action="Create" asp-controller="Category" class="btn btn-link text-warning">Add New Category</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                Types
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <ul>
+                        @foreach (var type in item.types)
+                        {
+                            <li>@type.Name</li>
+                        }
+                    </ul>
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    } 
+}
+
+
+

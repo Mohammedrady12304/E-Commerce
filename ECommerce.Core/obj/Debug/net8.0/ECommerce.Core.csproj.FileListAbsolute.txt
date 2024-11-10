@@ -10,3 +10,16 @@ C:\Users\Dc\source\repos\E-Commerce1\ECommerce.Core\obj\Debug\net8.0\ECommerce.C
 C:\Users\Dc\source\repos\E-Commerce1\ECommerce.Core\obj\Debug\net8.0\refint\ECommerce.Core.dll
 C:\Users\Dc\source\repos\E-Commerce1\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.pdb
 C:\Users\Dc\source\repos\E-Commerce1\ECommerce.Core\obj\Debug\net8.0\ref\ECommerce.Core.dll
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Core\bin\Debug\net8.0\ECommerce.Core.deps.json
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Core\bin\Debug\net8.0\ECommerce.Core.dll
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Core\bin\Debug\net8.0\ECommerce.Core.pdb
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.csproj.AssemblyReference.cache
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.AssemblyInfoInputs.cache
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.AssemblyInfo.cs
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.csproj.CoreCompileInputs.cache
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.sourcelink.json
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.dll
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Core\obj\Debug\net8.0\refint\ECommerce.Core.dll
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.pdb
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Core\obj\Debug\net8.0\ref\ECommerce.Core.dll

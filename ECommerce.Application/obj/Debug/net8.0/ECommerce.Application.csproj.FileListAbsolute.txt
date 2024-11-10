@@ -13,3 +13,19 @@ C:\Users\Dc\source\repos\E-Commerce1\ECommerce.Application\obj\Debug\net8.0\ECom
 C:\Users\Dc\source\repos\E-Commerce1\ECommerce.Application\obj\Debug\net8.0\refint\ECommerce.Application.dll
 C:\Users\Dc\source\repos\E-Commerce1\ECommerce.Application\obj\Debug\net8.0\ECommerce.Application.pdb
 C:\Users\Dc\source\repos\E-Commerce1\ECommerce.Application\obj\Debug\net8.0\ref\ECommerce.Application.dll
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\bin\Debug\net8.0\ECommerce.Application.deps.json
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\bin\Debug\net8.0\ECommerce.Application.dll
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\bin\Debug\net8.0\ECommerce.Application.pdb
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\bin\Debug\net8.0\ECommerce.Core.dll
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\bin\Debug\net8.0\ECommerce.Core.pdb
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\obj\Debug\net8.0\ECommerce.Application.csproj.AssemblyReference.cache
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\obj\Debug\net8.0\ECommerce.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\obj\Debug\net8.0\ECommerce.Application.AssemblyInfoInputs.cache
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\obj\Debug\net8.0\ECommerce.Application.AssemblyInfo.cs
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\obj\Debug\net8.0\ECommerce.Application.csproj.CoreCompileInputs.cache
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\obj\Debug\net8.0\ECommerce.Application.sourcelink.json
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\obj\Debug\net8.0\ECommerc.670E0CBE.Up2Date
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\obj\Debug\net8.0\ECommerce.Application.dll
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\obj\Debug\net8.0\refint\ECommerce.Application.dll
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\obj\Debug\net8.0\ECommerce.Application.pdb
+D:\.Net Courses\.Net\.Net Projects\Sigma Website\E-Commerce\E-Commerce\ECommerce.Application\obj\Debug\net8.0\ref\ECommerce.Application.dll

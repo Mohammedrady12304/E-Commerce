@@ -1,6 +1,8 @@
 using E_Commerce1.ECommerce.Infrastructure.Data;
 using E_Commerce1.Models;
+using ECommerce.Application.Interfaces;
 using ECommerce.Core.Entities;
+using ECommerce.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +16,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 //register userManager roleManager =>userRole
 builder.Services.AddIdentity<ApplicationUser,IdentityRole>(/*Â‰« „„ﬂ‰ «ﬂ » «· constratins » «⁄  «·»«”Ê—œ*/).AddEntityFrameworkStores<ApplicationDbContext>();
+
+// register repositories
+builder.Services.AddScoped<IBaseRepository<Category>, CategoryRepository>();
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
