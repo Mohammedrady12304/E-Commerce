@@ -10,6 +10,6 @@ namespace ECommerce.Core.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public ICollection<Type>? types { get; set; }
+        public ICollection<CategoryType>? types { get; set; }
     }
 }

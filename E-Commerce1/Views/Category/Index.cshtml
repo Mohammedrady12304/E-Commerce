@@ -29,7 +29,7 @@
                 </td>
                 <td>
                     <ul>
-                        @foreach (var type in item.types)
+                        @foreach (var type in item.types!)
                         {
                             <li>@type.Name</li>
                         }

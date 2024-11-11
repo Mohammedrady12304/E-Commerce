@@ -18,6 +18,7 @@ namespace E_Commerce1.ECommerce.Infrastructure.Data
         }
 
         public DbSet<Category> Categories { get; set; }
+        public DbSet<CategoryType> CategoryTypes { get; set; }
         
         
 

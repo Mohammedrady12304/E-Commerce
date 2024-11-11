@@ -24,6 +24,6 @@ namespace ECommerce.Core.Entities
         public WishList? wishList { get; set; }
         public Cart? cart { get; set; }
         public ICollection<Order>? orders { get; set; }
-        public Type type { get; set; }
+        public CategoryType type { get; set; }
     }
 }

@@ -19,6 +19,7 @@ builder.Services.AddIdentity<ApplicationUser,IdentityRole>(/*Â‰« „„ﬂ‰ «ﬂ » «· co
 
 // register repositories
 builder.Services.AddScoped<IBaseRepository<Category>, CategoryRepository>();
+builder.Services.AddScoped<IBaseRepository<CategoryType>, CategoryTypeRepository>();
 
 
 // Add services to the container.
