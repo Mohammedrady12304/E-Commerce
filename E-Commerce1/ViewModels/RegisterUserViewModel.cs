@@ -15,6 +15,7 @@ namespace E_Commerce1.ViewModels
         public string ComfirmPassword { get; set; }
 
         public string Address { get; set; }
-        public byte[]? ProfilePicture { get; set; } 
+        public IFormFile? ProfilePicture { get; set; }
+
     }
 }

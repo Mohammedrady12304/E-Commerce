@@ -269,3 +269,4 @@ C:\Users\Dc\source\repos\E-Commerce1\E-Commerce1\obj\Debug\net8.0\refint\E-Comme
 C:\Users\Dc\source\repos\E-Commerce1\E-Commerce1\obj\Debug\net8.0\E-Commerce.pdb
 C:\Users\Dc\source\repos\E-Commerce1\E-Commerce1\obj\Debug\net8.0\E-Commerce.genruntimeconfig.cache
 C:\Users\Dc\source\repos\E-Commerce1\E-Commerce1\obj\Debug\net8.0\ref\E-Commerce.dll
+C:\Users\Dc\source\repos\E-Commerce1\E-Commerce1\obj\Debug\net8.0\E-Commerce.sourcelink.json

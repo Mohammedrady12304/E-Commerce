@@ -79,6 +79,12 @@
                         </ul>
                     </li>
                     <li><a href="#contact">Contact</a></li>
+                    @if(User.IsInRole("Admin"))
+                    {
+
+                    <li><a  asp-area="" asp-controller="Roles" asp-action="New">Add Role</a></li>
+                    <li><a  asp-area="" asp-controller="Account" asp-action="AddAdmin">Add Admin</a></li>
+                    }
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
@@ -98,6 +104,8 @@
 
 
                     <li>
+                  Welcome @User.Identity.Name
+                    </li><li>
                     <a class="btn-getstarted" asp-area="" asp-controller="Account" asp-action="LogOut">LogOut</a>
                     </li>
                 }

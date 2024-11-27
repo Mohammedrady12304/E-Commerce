@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0Bi/bYlWZNc=",
+  "dgSpecHash": "c/m9qr6kDY4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\E-Commerce.csproj",
+  "projectFilePath": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\E-Commerce1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dc\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Dc\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -175,5 +175,12 @@
     "C:\\Users\\Dc\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Dc\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }
