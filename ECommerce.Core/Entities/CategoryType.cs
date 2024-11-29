@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ECommerce.Core.Entities
 {
-    public class Type
+    public class CategoryType
     {
         public string Id { get; set; }
         public string Name { get; set; }

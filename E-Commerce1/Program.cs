@@ -1,13 +1,15 @@
 using E_Commerce1.ECommerce.Infrastructure.Data;
 using E_Commerce1.Models;
 using ECommerce.Core.Entities;
+using ECommerce.Core.Interfaces;
+using ECommerce.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddScoped<IApplicationUserRepository, ApplicationUserRepository>();
 var connectionString = builder.Configuration.GetConnectionString("LocalConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));

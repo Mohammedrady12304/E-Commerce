@@ -1,21 +1,27 @@
 ﻿using E_Commerce1.Models;
 using E_Commerce1.ViewModels;
 using ECommerce.Core.Entities;
+using ECommerce.Core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace E_Commerce1.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly UserManager<ApplicationUser> userManager;
-        private readonly SignInManager<ApplicationUser> signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly IApplicationUserRepository _applicationUserRepository;
 
-        public AccountController(UserManager<ApplicationUser> _userManager , SignInManager<ApplicationUser> _signInManager)
+        public AccountController(UserManager<ApplicationUser> userManager , SignInManager<ApplicationUser> signInManager, IApplicationUserRepository applicationUserRepository)
         {
-                userManager = _userManager;
-                signInManager = _signInManager;
+                _userManager =userManager;
+                _signInManager = signInManager;
+                _applicationUserRepository = applicationUserRepository;
         }
         [Authorize(Roles ="Admin")]
         [HttpGet]
@@ -44,14 +50,14 @@ namespace E_Commerce1.Controllers
                 }
                    
 
-                IdentityResult result = await userManager.CreateAsync(applicationUser, newUserVM.Password);
+                IdentityResult result = await _userManager.CreateAsync(applicationUser, newUserVM.Password);
 
                 if (result.Succeeded == true)
                 {
                     //assign to role
-                    await userManager.AddToRoleAsync(applicationUser, "Admin");
+                    await _userManager.AddToRoleAsync(applicationUser, "Admin");
                     //create cookies
-                    await signInManager.SignInAsync(applicationUser, false);
+                    await _signInManager.SignInAsync(applicationUser, false);
                     return RedirectToAction(/*هنا هنحط ال view الاساسي   (action,controller)*/  "Index", "Home");
                 }
                 else
@@ -80,13 +86,13 @@ namespace E_Commerce1.Controllers
             if (ModelState.IsValid)
             {
                 //check
-              ApplicationUser userModel= await userManager.FindByNameAsync(userVM.UserName);
+              ApplicationUser userModel= await _userManager.FindByNameAsync(userVM.UserName);
                 if(userModel != null)
                 {
-                    bool found = await userManager.CheckPasswordAsync(userModel, userVM.Password);
+                    bool found = await _userManager.CheckPasswordAsync(userModel, userVM.Password);
                     if (found)
                     {
-                        await signInManager.SignInAsync(userModel, userVM.RemeberMe);
+                        await _signInManager.SignInAsync(userModel, userVM.RemeberMe);
                         return RedirectToAction(/*هنا هنحط ال action بتاع ال view الرئيسي*/);
                     }
                 }
@@ -118,12 +124,12 @@ namespace E_Commerce1.Controllers
                         applicationUser.ProfilePicture = memoryStream.ToArray();
                     }
                 }
-                IdentityResult result=await userManager.CreateAsync(applicationUser,newUserVM.Password);
+                IdentityResult result=await _userManager.CreateAsync(applicationUser,newUserVM.Password);
 
                 if (result.Succeeded==true)
                 {
                     //create cookies
-                    await signInManager.SignInAsync(applicationUser,false);
+                    await _signInManager.SignInAsync(applicationUser,false);
                     return RedirectToAction(/*هنا هنحط ال view الاساسي   (action,controller)*/  "Index","Home");
                 }
                 else
@@ -141,8 +147,45 @@ namespace E_Commerce1.Controllers
 
         public async Task <IActionResult> LogOut()
         {
-            await signInManager.SignOutAsync();
+            await _signInManager.SignOutAsync();
             return RedirectToAction("Login","Account");
         }
+
+        //public override async void OnActionExecuting(ActionExecutingContext context)
+        //{
+        //    var userId = context.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+        //    if (userId != null)
+        //    {
+        //        var user = await _applicationUserRepository.GetByIdAsync(userId);
+        //        //var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+
+        //        if (user?.ProfilePicture != null)
+        //        {
+        //            context.HttpContext.Items["ProfilePicture"] = Convert.ToBase64String(user.ProfilePicture);
+        //        }
+        //    }
+
+        //    base.OnActionExecuting(context);
+        //}
+        [HttpGet]
+        public async Task<IActionResult> GetUserProfilePicture()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null)
+            {
+                return Json(new { success = false });
+            }
+            var user = await _applicationUserRepository.GetByIdAsync(userId);
+            //var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+            if (user == null || user.ProfilePicture == null)
+            {
+                return Json(new { success = true, profilePicture = "/images/default-profile.png" });
+            }
+
+            var base64Picture = $"data:image/jpeg;base64,{Convert.ToBase64String(user.ProfilePicture)}";
+            return Json(new { success = true, profilePicture = base64Picture });
+        }
+
     }
 }

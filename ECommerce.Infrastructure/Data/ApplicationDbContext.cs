@@ -39,5 +39,21 @@ namespace E_Commerce1.ECommerce.Infrastructure.Data
 
            
         }
+
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Earnings> Earnings { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderedProduct> OrderedProducts { get; set; }
+        public DbSet<Payment> Payments { get; set; }
+        public DbSet<Payout> Payouts { get; set; }
+        public DbSet<Product> products { get; set; }
+        public DbSet<Review> Reviews { get; set; }
+        public DbSet<Shipment> Shipments { get; set; }
+        public DbSet<CategoryType> Types { get; set; }
+        public DbSet<WishList> WishLists { get; set; }
+        public DbSet<WishListedProduct> WishListedProducts { get; set; }
     }
+
 }
