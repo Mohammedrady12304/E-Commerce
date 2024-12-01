@@ -1,1 +1,20 @@
-﻿
+﻿@model ECommerce.Core.Entities.Product
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+
+<table>
+    
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>@Model.Name</td>
+        <td>@Model.Description</td>
+        <td>@Model.Price</td>
+    </tr>
+</table>

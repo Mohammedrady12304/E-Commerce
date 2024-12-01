@@ -1,4 +1,5 @@
 using E_Commerce1.Models;
+using ECommerce.Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -7,15 +8,17 @@ namespace E_Commerce1.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ICategoryTypeRepository _categoryType;
+        public HomeController(ILogger<HomeController> logger, ICategoryTypeRepository categoryType)
         {
             _logger = logger;
+            _categoryType = categoryType;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var categoryTypes = await _categoryType.GetAllAsync();
+            return View(categoryTypes);
         }
 
         public IActionResult Privacy()

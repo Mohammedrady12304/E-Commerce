@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace ECommerce.Core.Entities
     public class Category
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public ICollection<CategoryType>types { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public ICollection<CategoryType> CategoryTypes { get; set; } 
     }
 }

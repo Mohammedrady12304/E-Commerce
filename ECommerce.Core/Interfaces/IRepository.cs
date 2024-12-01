@@ -12,8 +12,9 @@ namespace ECommerce.Core.Interfaces
         Task<T> GetByIdAsync(string id);
         Task<T> GetByIdAsync(int id);
         Task AddAsync(T entity);
-        Task UpdateAsync(T old , T New);
+        Task UpdateAsync(T New);
         Task DeleteAsync(string id);
+        Task<bool> DeleteAsync(int id);
 
     }
 }

@@ -270,3 +270,6 @@ C:\Users\Dc\source\repos\E-Commerce1\E-Commerce1\bin\Debug\net8.0\ECommerce.Appl
 C:\Users\Dc\source\repos\E-Commerce1\E-Commerce1\bin\Debug\net8.0\ECommerce.Infrastructure.pdb
 C:\Users\Dc\source\repos\E-Commerce1\E-Commerce1\bin\Debug\net8.0\ECommerce.Core.pdb
 C:\Users\Dc\source\repos\E-Commerce1\E-Commerce1\obj\Debug\net8.0\E-Commerce1.sourcelink.json
+C:\Users\Dc\source\repos\E-Commerce1\E-Commerce1\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Dc\source\repos\E-Commerce1\E-Commerce1\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\Dc\source\repos\E-Commerce1\E-Commerce1\obj\Debug\net8.0\E-Commerce1.MvcApplicationPartsAssemblyInfo.cs

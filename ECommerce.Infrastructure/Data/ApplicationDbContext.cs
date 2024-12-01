@@ -51,7 +51,7 @@ namespace E_Commerce1.ECommerce.Infrastructure.Data
         public DbSet<Product> products { get; set; }
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Shipment> Shipments { get; set; }
-        public DbSet<CategoryType> Types { get; set; }
+        public DbSet<CategoryType> CategoryTypes { get; set; }
         public DbSet<WishList> WishLists { get; set; }
         public DbSet<WishListedProduct> WishListedProducts { get; set; }
     }

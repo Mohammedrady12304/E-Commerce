@@ -32,6 +32,11 @@ namespace ECommerce.Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
+        public Task<bool> DeleteAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<IEnumerable<ApplicationUser>> GetAllAsync()
         {
             var users = await _context.Users.ToListAsync();
@@ -59,7 +64,7 @@ namespace ECommerce.Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public Task UpdateAsync(ApplicationUser old, ApplicationUser New)
+        public Task UpdateAsync( ApplicationUser New)
         {
             throw new NotImplementedException();
         }
