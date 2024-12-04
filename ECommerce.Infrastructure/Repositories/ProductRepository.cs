@@ -31,7 +31,7 @@ namespace ECommerce.Infrastructure.Repositories
 
         public async Task AddAsync(Product entity)
         {
-            await _context.Set<Product>().AddAsync(entity);
+            await _context.products.AddAsync(entity);
             await _context.SaveChangesAsync();
         }
 
@@ -51,7 +51,12 @@ namespace ECommerce.Infrastructure.Repositories
                 return isDeleted;
             }
             _context.products.Remove(product);
+            var effectedRows = await _context.SaveChangesAsync();
+            if (effectedRows > 0)
             isDeleted = true;
+             
+
+           
             return isDeleted;
                           
         }
@@ -75,11 +80,11 @@ namespace ECommerce.Infrastructure.Repositories
         public  async Task UpdateAsync(Product New)
         {
             //todo:possiple problem here
-            //var product = await _context.products.Include(p => p.categoryType).ThenInclude(ct => ct.Category).SingleOrDefaultAsync(p=>p.Id==New.Id);
-            // product = New;
-            //_context.products.Update(product);
-            //_context.SaveChangesAsync();
-            throw new NotImplementedException();
+            var product = await _context.products.Include(p => p.categoryType).ThenInclude(ct => ct.Category).SingleOrDefaultAsync(p=>p.Id==New.Id);
+            product = New;
+            _context.products.Update(product);
+           await _context.SaveChangesAsync();
+     
         }
        
         public IEnumerable<SelectListItem> GetCategories() {

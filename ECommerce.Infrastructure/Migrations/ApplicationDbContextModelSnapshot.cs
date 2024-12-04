@@ -400,14 +400,12 @@ namespace ECommerce.Infrastructure.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("Text")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("productId")
                         .HasColumnType("int");
 
                     b.Property<string>("userId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
@@ -416,7 +414,8 @@ namespace ECommerce.Infrastructure.Migrations
                         .IsUnique();
 
                     b.HasIndex("userId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[userId] IS NOT NULL");
 
                     b.ToTable("Reviews");
                 });
@@ -794,9 +793,7 @@ namespace ECommerce.Infrastructure.Migrations
 
                     b.HasOne("ECommerce.Core.Entities.ApplicationUser", "User")
                         .WithOne("ProductReview")
-                        .HasForeignKey("ECommerce.Core.Entities.Review", "userId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ECommerce.Core.Entities.Review", "userId");
 
                     b.Navigation("Product");
 

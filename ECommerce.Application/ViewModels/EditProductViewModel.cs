@@ -7,7 +7,7 @@ namespace E_Commerce1.ViewModels
     {
         [MaxLength(250)]
         public string ProductName { get; set; } = string.Empty;
-        [MaxLength(2500)]
+        
         public int categoryId { get; set; }
         [Display(Name = "Category")]
         public IEnumerable<SelectListItem> Categories { get; set; } = Enumerable.Empty<SelectListItem>();

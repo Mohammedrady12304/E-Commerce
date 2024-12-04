@@ -27,6 +27,9 @@
     <link href="~/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+    <!--sweet alert css files-->
+    <link href="~/sweetalert2/sweetalert2.min.css" rel="stylesheet" />
+    
 
 
     <!-- Main CSS File -->
@@ -122,7 +125,7 @@
 
                 <li class="nav-item">
                     <img id="profilePicture"
-                         src="/images/default-profile.png"
+                         src="@Url.Action("GetProfilePicture", "Account")"
                          alt="Profile Picture"
                          class="profile-picture"
                          style="width: 40px; height: 40px; border-radius: 50%;" />
@@ -251,6 +254,10 @@
     <script src="~/assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="~/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+   
+    <!--sweet alert js files-->
+    <script src="~/sweetalert2/sweetalert2.min.js"></script>
+   
 
     <!-- Main JS File -->
     <script src="~/assets/js/main.js"></script>

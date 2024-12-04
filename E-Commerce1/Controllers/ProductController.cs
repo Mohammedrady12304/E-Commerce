@@ -9,6 +9,7 @@ namespace E_Commerce1.Controllers
 {
     public class ProductController : Controller
     {
+
         private readonly IProductRepository _product;
         public ProductController(IProductRepository product)
         {
@@ -47,6 +48,7 @@ namespace E_Commerce1.Controllers
             
                 Product product = new()
             {
+                categoryTypeId=AddproductVM.CategoryTypeId,
                 Name = AddproductVM.ProductName,
                 Description = AddproductVM.ProductDescription,
                 Brand = AddproductVM.Brand,
@@ -57,10 +59,11 @@ namespace E_Commerce1.Controllers
             };
            await _product.AddAsync(product);
             //todo: search for method to send the id with product details here to redirct to the product after adding it directly
-            return RedirectToAction(nameof(productDetails));
+            return RedirectToAction("Index","Home");
             
         }
         [HttpGet]
+        //todo:here is an problem in update the view model take the old data and send it
         public async Task<IActionResult> EditProduct(int id)
         {
             
@@ -70,20 +73,22 @@ namespace E_Commerce1.Controllers
             {
                 return NotFound();
             }
-           
+            
+
             EditProductViewModel EditProductVM = new EditProductViewModel
             {
                 
                 Categories = _product.GetCategories(),
                 CategoryTypes = _product.GetCategoriesTypes(),
                 ProductName = product.Name,
-                categoryId = product.Id,
-                CategoryTypeId = product.categoryType.Id,
+                categoryId = product.categoryType.Category.Id,
+                CategoryTypeId=product.categoryTypeId,
                 Price = product.Price,
                 Model=product.Model,
                 Brand=product.Brand,
                 ProductDescription=product.Description,
-                productImages=await _product.ConvertByteArrayToFormFile(product.Images),
+                //todo:remeber to handle images errors
+               productImages=await _product.ConvertByteArrayToFormFile(product.Images),
             };
             return View(EditProductVM);
         }
@@ -103,6 +108,8 @@ namespace E_Commerce1.Controllers
             
             Product product = new()
             {
+                
+                categoryTypeId= EditproductVM.CategoryTypeId,
                 Name = EditproductVM.ProductName,
                 Description = EditproductVM.ProductDescription,
                 Brand = EditproductVM.Brand,
@@ -112,14 +119,16 @@ namespace E_Commerce1.Controllers
 
             };
             await _product.UpdateAsync(product);
-            return RedirectToAction(nameof(productDetails));
+            return RedirectToAction("Index", "Home"); ;
             
         }
+        
         public async Task<IActionResult> Delete(int id)
         {
-            //todo:don't forget to handle Delete alert
             bool isDeleted = await _product.DeleteAsync(id);
-            return isDeleted ? Ok() : BadRequest();    
+            
+            return isDeleted ? Ok() : BadRequest();
+            
         }
 
 

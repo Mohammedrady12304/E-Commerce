@@ -3,7 +3,15 @@
 @{
     ViewData["Title"] = Model.Name;
 }
+<a asp-action="EditProduct" asp-route-id="@Model.Id" class="btn btn-secondary mb-5 mt-5" >
+   
+    Edit this product
+    </a>
 
+<a href="javescript:;" class="text-decoration-none btn btn-secondary mb-5 mt-5 deleteClass" data-id="@Model.Id" style="background-color:red">
+                        Delete this product
+
+                        </a>
 
 <table>
     
@@ -18,3 +26,54 @@
         <td>@Model.Price</td>
     </tr>
 </table>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('.deleteClass').on('click', function () {
+                var btn = $(this);
+
+                const swalWithBootstrapButtons = Swal.mixin({
+                    customClass: {
+                        confirmButton: "btn btn-danger mx-2",
+                        cancelButton: "btn btn-light"
+                    },
+                    buttonsStyling: false
+                });
+                swalWithBootstrapButtons.fire({
+                    title: "Are you sure that you need to delete this game?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonText: "Yes, delete it!",
+                    cancelButtonText: "No, cancel!",
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        $.ajax({
+                            url: `/Product/Delete/${btn.data('id')}`,
+                            method: 'DELETE',
+                            success: function () {
+                                swalWithBootstrapButtons.fire({
+                                    title: "Deleted!",
+                                    text: "Your file has been deleted.",
+                                    icon: "success"
+                                });
+                               // btn.parents('tr').fadeOut();//دي كده هتساعدني اميح ال tr كله من غير refresh
+                            },
+                            error: function () {
+                                swalWithBootstrapButtons.fire({
+                                    title: "!oooops...",
+                                    text: "something went wrong",
+                                    icon: "error"
+                                });
+                            }
+                        });
+
+                    }
+                });
+
+            });
+        });
+    </script>
+}

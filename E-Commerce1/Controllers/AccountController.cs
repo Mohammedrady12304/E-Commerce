@@ -23,13 +23,14 @@ namespace E_Commerce1.Controllers
                 _signInManager = signInManager;
                 _applicationUserRepository = applicationUserRepository;
         }
-        [Authorize(Roles ="Admin")]
+        [Authorize(Roles="Admin")]
         [HttpGet]
         public IActionResult AddAdmin()
         {
             return View();
         }
-        [Authorize(Roles ="Admin")]
+        
+        [Authorize(Roles="Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddAdmin(RegisterUserViewModel newUserVM)
@@ -187,5 +188,16 @@ namespace E_Commerce1.Controllers
             return Json(new { success = true, profilePicture = base64Picture });
         }
 
+        public async Task<IActionResult> GetProfilePicture()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user?.ProfilePicture == null)
+            {
+                return File("/images/default-profile.png", "image/png");
+            }
+
+            return File(user.ProfilePicture, "image/jpeg");
+        }
     }
 }
+

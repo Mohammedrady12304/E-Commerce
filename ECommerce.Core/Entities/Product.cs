@@ -19,6 +19,7 @@ namespace ECommerce.Core.Entities
         public byte[]? Images { get; set; }
 
         public Review Review { get; set; } = new();
+        public int categoryTypeId { get; set; }
         public CategoryType categoryType { get; set; }
         public ICollection<ApplicationUser> Users { get; set; } 
         public WishList? wishList { get; set; }

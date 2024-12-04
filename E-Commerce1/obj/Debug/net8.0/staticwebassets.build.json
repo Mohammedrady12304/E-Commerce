@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7W0RqCMmwcK/q05MSbcUZPbEekYqFf0PyGSotzFjVNQ=",
+  "Hash": "SWUW+4/JBX+PKXKR9OuvDIZ+1VEf8GVl7/NE7gxhmbU=",
   "Source": "E-Commerce1",
   "BasePath": "_content/E-Commerce1",
   "Mode": "Default",
@@ -2088,6 +2088,25 @@
       "OriginalItemSpec": "wwwroot\\forms\\Readme.txt"
     },
     {
+      "Identity": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\wwwroot\\images\\default-profile.png",
+      "SourceId": "E-Commerce1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\wwwroot\\",
+      "BasePath": "_content/E-Commerce1",
+      "RelativePath": "images/default-profile.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\default-profile.png"
+    },
+    {
       "Identity": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "E-Commerce1",
       "SourceType": "Discovered",
@@ -3169,6 +3188,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\wwwroot\\sweetalert2\\sweetalert2.min.css",
+      "SourceId": "E-Commerce1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\wwwroot\\",
+      "BasePath": "_content/E-Commerce1",
+      "RelativePath": "sweetalert2/sweetalert2.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sweetalert2\\sweetalert2.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\wwwroot\\sweetalert2\\sweetalert2.min.js",
+      "SourceId": "E-Commerce1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\wwwroot\\",
+      "BasePath": "_content/E-Commerce1",
+      "RelativePath": "sweetalert2/sweetalert2.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sweetalert2\\sweetalert2.min.js"
     }
   ]
 }
