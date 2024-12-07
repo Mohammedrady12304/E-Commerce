@@ -61,9 +61,9 @@ namespace ECommerce.Infrastructure.Repositories
                           
         }
 
-        public Task<IEnumerable<Product>> GetAllAsync()
+        public async Task<IEnumerable<Product>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _context.products.Include(p => p.categoryType).ThenInclude(ct => ct.Category).ToListAsync();
         }
 
         public Task<Product> GetByIdAsync(string id)
@@ -73,7 +73,7 @@ namespace ECommerce.Infrastructure.Repositories
 
         public async Task<Product> GetByIdAsync(int id)
         {
-            var product = await _context.products.SingleOrDefaultAsync(p => p.Id ==id);
+            var product = await _context.products.Include(p=>p.categoryType).ThenInclude(ct=>ct.Category).SingleOrDefaultAsync(p => p.Id ==id);
             return product;
         }
 
@@ -81,9 +81,19 @@ namespace ECommerce.Infrastructure.Repositories
         {
             //todo:possiple problem here
             var product = await _context.products.Include(p => p.categoryType).ThenInclude(ct => ct.Category).SingleOrDefaultAsync(p=>p.Id==New.Id);
-            product = New;
+            if(product != null)
+            {
+                
+                product.categoryTypeId = New.categoryTypeId;
+                product.Name = New.Name;
+                product.Description = New.Description;
+                product.Brand = New.Brand;
+                product.Price = New.Price;
+                product.Model = New.Model;
+                product.Images = New.Images;
             _context.products.Update(product);
            await _context.SaveChangesAsync();
+            }
      
         }
        
@@ -100,7 +110,7 @@ namespace ECommerce.Infrastructure.Repositories
 
             return _context.CategoryTypes.Select(ct => new SelectListItem {Value=ct.Id.ToString(),Text=ct.Name }).ToList();
         }
-        public async Task<IFormFile> ConvertByteArrayToFormFile(byte[] image)
+        public IFormFile ConvertByteArrayToFormFile(byte[] image)
         {
             
                     using (var memoryStream = new MemoryStream(image))

@@ -152,41 +152,6 @@ namespace E_Commerce1.Controllers
             return RedirectToAction("Login","Account");
         }
 
-        //public override async void OnActionExecuting(ActionExecutingContext context)
-        //{
-        //    var userId = context.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-        //    if (userId != null)
-        //    {
-        //        var user = await _applicationUserRepository.GetByIdAsync(userId);
-        //        //var user = _context.Users.FirstOrDefault(u => u.Id == userId);
-
-        //        if (user?.ProfilePicture != null)
-        //        {
-        //            context.HttpContext.Items["ProfilePicture"] = Convert.ToBase64String(user.ProfilePicture);
-        //        }
-        //    }
-
-        //    base.OnActionExecuting(context);
-        //}
-        [HttpGet]
-        public async Task<IActionResult> GetUserProfilePicture()
-        {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (userId == null)
-            {
-                return Json(new { success = false });
-            }
-            var user = await _applicationUserRepository.GetByIdAsync(userId);
-            //var user = _context.Users.FirstOrDefault(u => u.Id == userId);
-            if (user == null || user.ProfilePicture == null)
-            {
-                return Json(new { success = true, profilePicture = "/images/default-profile.png" });
-            }
-
-            var base64Picture = $"data:image/jpeg;base64,{Convert.ToBase64String(user.ProfilePicture)}";
-            return Json(new { success = true, profilePicture = base64Picture });
-        }
 
         public async Task<IActionResult> GetProfilePicture()
         {

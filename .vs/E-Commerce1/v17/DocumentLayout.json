@@ -3,23 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|c:\\users\\dc\\source\\repos\\e-commerce1\\e-commerce1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|solutionrelative:e-commerce1\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|c:\\users\\dc\\source\\repos\\e-commerce1\\e-commerce1\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|solutionrelative:e-commerce1\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|c:\\users\\dc\\source\\repos\\e-commerce1\\e-commerce1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|solutionrelative:e-commerce1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/E_Commerce/True/SqlTable/security.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|c:\\users\\dc\\source\\repos\\e-commerce1\\e-commerce1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|solutionrelative:e-commerce1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F1EC1561-46A1-4701-95F3-D186485526A2}|Solution Items{F1EC1561-46A1-4701-95F3-D186485526A2}|C:\\Users\\Dc\\source\\repos\\E-Commerce1\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{F1EC1561-46A1-4701-95F3-D186485526A2}|Solution Items{F1EC1561-46A1-4701-95F3-D186485526A2}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,72 +14,23 @@
       "DocumentGroups": [
         {
           "DockedHeight": 759,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "E-Commerce1\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "E-Commerce1\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAHwFIAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T14:18:27.71Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "E-Commerce1\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "E-Commerce1\\Views\\Account\\Register.cshtml",
-              "ViewState": "AQIAABEAAACAyszMzAwswA0AAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T13:35:18.008Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "E-Commerce1\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "E-Commerce1\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAALEAAABAmZmZmRkdwMcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T12:10:59.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "security.Users [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/E_Commerce/True/SqlTable/security.Users.sql",
-              "ToolTip": "security.Users [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-04T11:21:09.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "E-Commerce1\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "E-Commerce1\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAHQAAAAAY5mZmZkJwHoAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T11:16:27.994Z",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-12-07T23:19:13.993Z",
               "EditorCaption": ""
             }
           ]

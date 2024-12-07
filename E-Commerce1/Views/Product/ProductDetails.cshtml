@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = Model.Name;
 }
+<div class="d-flex justify-content-center align-items-center ">
 <a asp-action="EditProduct" asp-route-id="@Model.Id" class="btn btn-secondary mb-5 mt-5" >
    
     Edit this product
@@ -13,20 +14,48 @@
 
                         </a>
 
-<table>
-    
-    <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Price</th>
-    </tr>
-    <tr>
-        <td>@Model.Name</td>
-        <td>@Model.Description</td>
-        <td>@Model.Price</td>
-    </tr>
-</table>
 
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            width: 30%;
+        }
+    </style>
+
+    <hr />
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <td>@Model.Name</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>@Model.Description</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>@Model.Price</td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td><img src="@Url.Action("GetProductPicture","Product",new{id=@Model.Id})"</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 @section scripts {
     <script>
         $(document).ready(function () {

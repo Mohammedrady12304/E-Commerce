@@ -18,7 +18,7 @@ namespace ECommerce.Core.Interfaces
 
         IEnumerable<SelectListItem> GetCategoriesTypes();
        
-        Task<IFormFile> ConvertByteArrayToFormFile(byte[] image);
+        IFormFile ConvertByteArrayToFormFile(byte[] image);
         Task<byte[]> ConvertIFormFileToByteArray(IFormFile file);
 
 

@@ -4,14 +4,13 @@
     ViewData["Title"] = "Add Admin";
 }
 <div style="margin:50px">
+    <div class="d-flex justify-content-center align-items-center ">
+            <form asp-action="AddAdmin">
 
     <h1>Add Admin</h1>
 
 
     <hr />
-    <div class="row">
-        <div class="col-md-4">
-            <form asp-action="AddAdmin">
                 <div asp-validation-summary="All" class="text-danger"></div>
                 <div class="form-group">
                     <label asp-for="UserName" class="control-label"></label>

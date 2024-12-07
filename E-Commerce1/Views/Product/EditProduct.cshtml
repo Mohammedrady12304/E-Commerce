@@ -4,13 +4,15 @@
     ViewData["Title"] = "EditProduct";
 }
 
-<h5>EditProduct</h5>
 
-<hr />
-<div class="row" style="pading:50px">
-    <div class="col-md-4">
+
+
+        <div class="d-flex justify-content-center align-items-center ">
         <form asp-controller="Product" enctype="multipart/form-data">
+        <h3>EditProduct</h3>
+        <hr />
             <div asp-validation-summary="All" class="text-danger"></div>
+             <input type="hidden" asp-for="ProductId" />
             <div class="form-group">
                 <label asp-for="ProductName" class="form-label mt-4"></label>
                 <input asp-for="ProductName" type="text" class="form-control" placeholder="Enter the product name" />
@@ -47,11 +49,17 @@
                 <input asp-for="Brand" class="form-control" />
                 <span asp-validation-for="Brand" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ProductDescription" class="control-label"></label>
-                <input asp-for="ProductDescription" class="form-control" />
-                <span asp-validation-for="ProductDescription" class="text-danger"></span>
-            </div>
+        <div class="form-group">
+            <label asp-for="ProductDescription" class="control-label"></label>
+            <textarea asp-for="ProductDescription" class="form-control" rows="4"></textarea>
+            <span asp-validation-for="ProductDescription" class="text-danger"></span>
+        </div>
+        <div>
+    @if (Model.productImages != null)
+    {
+                    <img src="@Url.Action("GetProductPicture","Product",new{id=Model.ProductId})" alt="Current Image" width="150" />
+    }
+</div>
             <div>
                 <label asp-for="productImages" class="form-label mt-4"></label>
                 <input type="file" class="form-control" asp-for="productImages" />
@@ -64,8 +72,9 @@
                 <button type="submit" class="btn btn-light text-black mt-4">Update</button>
             </div>
         </form>
+
     </div>
-</div>
+    
 
 <div>
     <a asp-action="Index">Back to List</a>

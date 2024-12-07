@@ -5,6 +5,7 @@ namespace E_Commerce1.ViewModels
 {
     public class EditProductViewModel
     {
+        public int ProductId { get; set; }
         [MaxLength(250)]
         public string ProductName { get; set; } = string.Empty;
         
