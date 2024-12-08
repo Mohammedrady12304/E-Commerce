@@ -334,10 +334,15 @@
 
         <h2>Products</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-            <a class="btn btn-secondary mb-5 mt-5" asp-controller="Product" asp-action="AddProduct">
+           @if(User.IsInRole("Admin")){
+
+
+        <a class="btn btn-secondary mb-5 mt-5" asp-controller="Product" asp-action="AddProduct">
                 <i class="bi bi-plus-circle-dotted "></i>
                 Add Product
             </a>
+           }
+           
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -353,22 +358,25 @@
             <li data-filter=".filter-books">Books</li> *@
             }
           </ul><!-- End Portfolio Filters -->
-
+          <hr/>
+         
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
               @foreach(var product in Model.products){
                   <a asp-controller="Product" asp-action="ProductDetails" asp-route-id="@product.Id" >
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-@product.categoryType.Category.Name">
               <div class="portfolio-content h-100">
-                <img src="@Url.Action("GetProductPicture", "Product", new { id = product.Id })" class="img-fluid" alt="">
+                <img src="@Url.Action("GetProductPicture", "Product", new { id = product.Id })" class="img-fluid h-100" alt="">
                                 <div class="portfolio-info" style="display: flex;justify-content: space-between;align-items: center;">
                     <div>
 
                                     <h4>@product.Name</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                     </div>
-                                    <div class="p-5" style="display:flex;justify-content: space-between;">
-                        <a href="javescript:;" class="text-decoration-none deleteClass" data-id="@product.Id" >
+                                        <div class="p-5" style="display:flex;justify-content: space-between;">
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                            <a href="javescript:;" class="text-decoration-none deleteClass" data-id="@product.Id" >
                         <i  class="bi bi-trash-fill p-2" style="font-size: 30px;"></i>
 
                         </a>
@@ -378,6 +386,7 @@
                         <i class="bi bi-pencil-square p-2" style="font-size: 30px;"></i>
    
                         </a>
+                }
                 </div>
 
                 </div>
@@ -736,7 +745,7 @@
                     buttonsStyling: false
                 });
                 swalWithBootstrapButtons.fire({
-                    title: "Are you sure that you need to delete this game?",
+                    title: "Are you sure that you need to delete this product?",
                     text: "You won't be able to revert this!",
                     icon: "warning",
                     showCancelButton: true,
@@ -751,7 +760,7 @@
                             success: function () {
                                 swalWithBootstrapButtons.fire({
                                     title: "Deleted!",
-                                    text: "Your file has been deleted.",
+                                    text: "the product has been deleted.",
                                     icon: "success"
                                 });
                                 btn.parents('.portfolio-content').fadeOut();//دي كده هتساعدني اميح ال tr كله من غير refresh

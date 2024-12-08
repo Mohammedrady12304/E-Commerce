@@ -3,8 +3,41 @@
   "WorkspaceRootPath": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F1EC1561-46A1-4701-95F3-D186485526A2}|Solution Items{F1EC1561-46A1-4701-95F3-D186485526A2}|C:\\Users\\Dc\\source\\repos\\E-Commerce1\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{F1EC1561-46A1-4701-95F3-D186485526A2}|Solution Items{F1EC1561-46A1-4701-95F3-D186485526A2}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|c:\\users\\dc\\source\\repos\\e-commerce1\\e-commerce1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|solutionrelative:e-commerce1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/E_Commerce/True/SqlTable/security.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/E_Commerce/True/SqlTable/security.UserRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|c:\\users\\dc\\source\\repos\\e-commerce1\\e-commerce1\\views\\product\\productdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|solutionrelative:e-commerce1\\views\\product\\productdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|c:\\users\\dc\\source\\repos\\e-commerce1\\e-commerce1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|solutionrelative:e-commerce1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|c:\\users\\dc\\source\\repos\\e-commerce1\\e-commerce1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{843F2098-CC84-49F8-9545-9B7EDAFE87AD}|E-Commerce1\\E-Commerce1.csproj|solutionrelative:e-commerce1\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3FABE1-A91D-4AC8-B271-FF5A3828AFFC}|ECommerce.Infrastructure\\ECommerce.Infrastructure.csproj|c:\\users\\dc\\source\\repos\\e-commerce1\\ecommerce.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3FABE1-A91D-4AC8-B271-FF5A3828AFFC}|ECommerce.Infrastructure\\ECommerce.Infrastructure.csproj|solutionrelative:ecommerce.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/E_Commerce/True/SqlTable/security.UserLogins.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB4093C0-1D9A-4C13-9E0A-0F1D5C856656}|ECommerce.Core\\ECommerce.Core.csproj|c:\\users\\dc\\source\\repos\\e-commerce1\\ecommerce.core\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB4093C0-1D9A-4C13-9E0A-0F1D5C856656}|ECommerce.Core\\ECommerce.Core.csproj|solutionrelative:ecommerce.core\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3FABE1-A91D-4AC8-B271-FF5A3828AFFC}|ECommerce.Infrastructure\\ECommerce.Infrastructure.csproj|c:\\users\\dc\\source\\repos\\e-commerce1\\ecommerce.infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3FABE1-A91D-4AC8-B271-FF5A3828AFFC}|ECommerce.Infrastructure\\ECommerce.Infrastructure.csproj|solutionrelative:ecommerce.infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +47,131 @@
       "DocumentGroups": [
         {
           "DockedHeight": 759,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "security.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/E_Commerce/True/SqlTable/security.Users.sql",
+              "ToolTip": "security.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-08T03:55:37.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Views\\Product\\ProductDetails.cshtml",
+              "RelativeDocumentMoniker": "E-Commerce1\\Views\\Product\\ProductDetails.cshtml",
+              "ToolTip": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Views\\Product\\ProductDetails.cshtml",
+              "RelativeToolTip": "E-Commerce1\\Views\\Product\\ProductDetails.cshtml",
+              "ViewState": "AQIAACUAAAAA0czMzAwswDkAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T02:57:56.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "E-Commerce1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "E-Commerce1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEQAAAAAb2ZmZmYkwFQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T02:53:53.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "E-Commerce1\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "E-Commerce1\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAJIAAAAAEDMzMzMGwKMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T00:58:37.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "security.UserLogins [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/E_Commerce/True/SqlTable/security.UserLogins.sql",
+              "ToolTip": "security.UserLogins [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-08T00:56:33.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "E-Commerce1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\E-Commerce1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "E-Commerce1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAGgBAACAaGZmZmYAwHABAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T00:46:57.442Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-12-07T23:19:13.993Z",
+              "DocumentIndex": 8,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\ECommerce.Core\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "ECommerce.Core\\Entities\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\ECommerce.Core\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "ECommerce.Core\\Entities\\ApplicationUser.cs",
+              "ViewState": "AQIAAAIAAADA//////8AwA8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T00:26:53.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\ECommerce.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "ECommerce.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\ECommerce.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "ECommerce.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AQIAAAMAAABIzczMzAwswAAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T00:27:21.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\ECommerce.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ECommerce.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Dc\\source\\repos\\E-Commerce1\\ECommerce.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ECommerce.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAABIAAADAzczMzEwmwCQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T00:25:28.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "security.UserRoles [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/E_Commerce/True/SqlTable/security.UserRoles.sql",
+              "ToolTip": "security.UserRoles [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-06T05:43:24.449Z",
               "EditorCaption": ""
             }
           ]

@@ -1,5 +1,4 @@
 ﻿using E_Commerce1.ECommerce.Infrastructure.Data;
-using ECommerce.Application.Interfaces;
 using ECommerce.Core.Entities;
 using ECommerce.Core.Interfaces;
 using Microsoft.EntityFrameworkCore;

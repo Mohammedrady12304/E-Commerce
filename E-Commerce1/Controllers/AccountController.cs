@@ -50,16 +50,16 @@ namespace E_Commerce1.Controllers
                     }
                 }
                    
+                
+                IdentityResult result = await _userManager.CreateAsync(applicationUser, newUserVM.Password);//هنا كده عرفته اني اهيش الباسورد
 
-                IdentityResult result = await _userManager.CreateAsync(applicationUser, newUserVM.Password);
-
-                if (result.Succeeded == true)
+                if (result.Succeeded)
                 {
                     //assign to role
                     await _userManager.AddToRoleAsync(applicationUser, "Admin");
                     //create cookies
                     await _signInManager.SignInAsync(applicationUser, false);
-                    return RedirectToAction(/*هنا هنحط ال view الاساسي   (action,controller)*/  "Index", "Home");
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
@@ -94,7 +94,7 @@ namespace E_Commerce1.Controllers
                     if (found)
                     {
                         await _signInManager.SignInAsync(userModel, userVM.RemeberMe);
-                        return RedirectToAction(/*هنا هنحط ال action بتاع ال view الرئيسي*/);
+                        return RedirectToAction("Index","Home");
                     }
                 }
                 ModelState.AddModelError("", "UserName and Password is wrong");
@@ -131,7 +131,7 @@ namespace E_Commerce1.Controllers
                 {
                     //create cookies
                     await _signInManager.SignInAsync(applicationUser,false);
-                    return RedirectToAction(/*هنا هنحط ال view الاساسي   (action,controller)*/  "Index","Home");
+                    return RedirectToAction( "Index","Home");
                 }
                 else
                 {

@@ -4,6 +4,8 @@
     ViewData["Title"] = Model.Name;
 }
 <div class="d-flex justify-content-center align-items-center ">
+     @if(User.IsInRole("Admin"))
+                    {
 <a asp-action="EditProduct" asp-route-id="@Model.Id" class="btn btn-secondary mb-5 mt-5" >
    
     Edit this product
@@ -13,10 +15,12 @@
                         Delete this product
 
                         </a>
+                    }
 
 
     <style>
         table {
+            margin:25px;
             width: 50%;
             border-collapse: collapse;
         }
@@ -51,7 +55,7 @@
             </tr>
             <tr>
                 <th>Image</th>
-                <td><img src="@Url.Action("GetProductPicture","Product",new{id=@Model.Id})"</td>
+                <td><img src="@Url.Action("GetProductPicture","Product",new{id=@Model.Id})" style="height: 250px" /></td>
             </tr>
         </tbody>
     </table>

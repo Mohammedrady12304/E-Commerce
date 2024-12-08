@@ -104,25 +104,6 @@
                 }
                 else
                 {
-               @*       <li class="nav-item">
-                @if (HttpContext.Items["ProfilePicture"] != null)
-                {
-                    <img 
-                        src="data:image/jpeg;base64,@HttpContext.Items["ProfilePicture"]" 
-                        alt="Profile Picture" 
-                        class="profile-picture" 
-                        style="width: 40px; height: 40px; border-radius: 50%;" />
-                }
-                else
-                {
-                    <img 
-                        src="/images/default-profile.png" 
-                        alt="Default Profile Picture" 
-                        class="profile-picture" 
-                        style="width: 40px; height: 40px; border-radius: 50%;" />
-                }
-            </li> *@
-
                 <li class="nav-item">
                     <img id="profilePicture"
                          src="@Url.Action("GetProfilePicture", "Account")"
@@ -140,18 +121,6 @@
                     <li>
                     <a class="btn-getstarted" asp-area="" asp-controller="Account" asp-action="LogOut">LogOut</a>
                     </li>
-
-                <script>
-                    // Fetch profile picture
-                    fetch('/Account/GetUserProfilePicture')
-                        .then(response => response.json())
-                        .then(data => {
-                            if (data.success) {
-                                document.getElementById('profilePicture').src = data.profilePicture;
-                            }
-                        })
-                        .catch(error => console.error('Error fetching profile picture:', error));
-                </script>
 
                 }
             
